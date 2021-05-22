@@ -1,11 +1,11 @@
-FROM openjdk:8u131-jdk-alpine 
+FROM openjdk:8u151-jdk-alpine
 
-LABEL maintainer="mritd <mritd1234@gmail.com>"
+LABEL maintainer="mritd <mritd@linux.com>"
 
 ARG TZ='Asia/Shanghai'
 
 ENV TZ ${TZ}
-ENV LINKERD_VERSION 1.2.0 
+ENV LINKERD_VERSION 1.3.3 
 ENV LINKERD_DOWNLOAD_URL https://github.com/linkerd/linkerd/releases/download/${LINKERD_VERSION}/linkerd-${LINKERD_VERSION}-exec
 
 RUN apk upgrade --update \
